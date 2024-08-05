@@ -1,0 +1,13 @@
+//Faça um programa em que forneça o primeiro termo e a razão de uma progressão aritmética e gere seus 10 elementos.
+
+void main() {
+  
+  double primeiroTermo = 2;
+  double razao = 3;
+
+  for (int i = 1; i <= 10; i++) {
+    double termo = primeiroTermo + (i - 1) * razao;
+    print("Termo $i: $termo");
+  }
+  
+}
