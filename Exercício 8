@@ -1,0 +1,44 @@
+//Faça um programa para realizar a conversão entre escala de temperaturas. O algoritmo deverá realizar as conversões como segue:
+//1. Celsius -> Farenheit
+//2. Farenheit -> Celsius
+//3. Celsius -> Kelvin
+//4. Kelvin -> Celsius
+
+//Você deverá fornecer os valores da temperatura e a saída do programa deverá //retornar a temperatura
+//já convertida. Para ter acesso às fórmulas, realize uma busca pela internet.
+
+void main() {
+  
+  double temp = 0;
+  int escolha = 3;
+  
+  double cf = 0;
+  double fc = 0;
+  double ck = 0;
+  double kc = 0;
+  
+  if (escolha == 1){
+    print("1. Celsius -> Farenheit:");
+    cf = (temp*1.8)+32;
+    print("$temp C° -> $cf F°");
+    
+  }else if (escolha == 2){
+    print("2. Farenheit -> Celsius:");
+    fc = (temp-32)/(1.8);
+    print("$temp F° -> $fc C°");
+    
+  }else if (escolha == 3){
+    print("3. Celsius -> Kelvin:");
+    ck = temp+273.15;
+    print("$temp C° -> $ck K");
+    
+  }else if (escolha == 4){
+    print("4. Kelvin -> Celsius");
+    kc = temp+273.15;
+    print("$temp K -> $kc C°");
+    
+  }else{
+    print("Opção inválida!");
+  }
+  
+}
