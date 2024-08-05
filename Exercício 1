@@ -1,0 +1,29 @@
+EX1:
+//Faça uma função que dado um número, retorne à classificação do ângulo. (Ângulo //agudo:
+//ângulo com medida maior que 0° menor que 90°; Ângulo reto: ângulo com medida igual a 90°;
+//Ângulo obtuso: ângulo com medida maior que 90° e menor que 180°; Ângulo raso: ângulo
+//com medida igual a 0° ou 180°; Ângulo Côncavo: ângulo com medida entre 180° e 360°;
+//Ângulo completo: ângulo com medida igual a 360°).
+
+void main() {
+
+  double angulo = 3609;
+  
+  if (angulo > 0 && angulo < 90){
+    print("Ângulo agudo");
+  } else if (angulo ==90){
+    print("Ângulo reto");
+  } else if (angulo > 90 && angulo < 180){
+    print("Ângulo obtuso");
+  } else if (angulo == 0 || angulo == 180){
+    print("Ângulo raso");
+  } else if (angulo > 180 && angulo < 360){
+    print("Ângulo côncavo");
+  } else if (angulo == 360){
+    print("Ângulo Completo");
+  } else {
+    print("Digite outro valor!");
+  }
+  
+  
+}
