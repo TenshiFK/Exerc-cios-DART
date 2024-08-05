@@ -1,0 +1,22 @@
+//Baseado na tabela abaixo, retorne à classificação de um produto.
+
+void main() {
+
+  double codigo = 43;
+  
+  if (codigo == 1){
+    print("Alimento não-perecível");
+  } else if (codigo == 2 || codigo == 3 || codigo == 4){
+    print("Alimento perecível");
+  } else if (codigo == 5 || codigo == 6){
+    print("Vestuário");
+  } else if (codigo == 7){
+    print("Higiene Pessoal");
+  } else if (codigo >= 8 && codigo <= 15){
+    print("Limpeza e Utensílios Domésticos");
+  } else {
+    print("Código inválido.");
+  }
+  
+  
+}
