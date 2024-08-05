@@ -1,0 +1,20 @@
+//Crie um programa que armazene os pesos de um grupo 5 pessoas depois exibe em tela a média de peso.
+
+void main() {
+  
+  double p1 = 23;
+  double p2 = 54;
+  double p3 = 32;
+  double p4 = 98;
+  double p5 = 43;
+
+  double soma = 0;
+  double media = 0;
+    
+  soma = p1+p2+p3+p4+p5;
+  
+  media = soma/5;
+  
+  print("Média de peso: $media");
+  
+}
