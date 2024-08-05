@@ -1,0 +1,17 @@
+//Faça um programa que receba dois números. Realize a soma dos dois números. Caso a soma dos números seja par, multiplique esta soma por 3 e apresente na saída. Caso contrário apresente apenas a soma dos dois números.
+
+void main() {
+  
+  int n1 = 4;
+  int n2 = 6;
+
+  int soma = n1+n2;
+  
+  if(soma%2 == 0){
+    int multi = soma*3;
+    print("Soma $soma * 3: $multi");
+  } else{
+    print("Soma: $soma");
+  }
+  
+}
