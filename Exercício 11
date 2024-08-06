@@ -1,0 +1,49 @@
+//Crie um programa que contemple os principais conceitos de orientação a objetos (classe, objeto, métodos, construtores, encapsulamento, herança, sobrescrita, modificadores e classes abstratas), o tema da aplicação será de escolha do aluno, será necessário criar instâncias no método principal para testar as funcionalidades implementadas.
+
+abstract class Animal {
+  String nome;
+
+  Animal(this.nome);
+
+  void fazerSom();
+
+  void dormir() {
+    print('$nome está dormindo.');
+  }
+}
+
+class Cachorro extends Animal {
+  String _corDoPelo;
+
+  Cachorro(String nome, this._corDoPelo) : super(nome);
+
+  @override
+  void fazerSom() {
+    print('$nome diz: Au Au!');
+  }
+
+  
+  String get corDoPelo => _corDoPelo;
+}
+
+class Gato extends Animal {
+  Gato(String nome) : super(nome);
+
+  @override
+  void fazerSom() {
+    print('$nome diz: Miau!');
+  }
+}
+
+void main() {
+  Cachorro cachorro = Cachorro('Pluto', 'Amarelo');
+  Gato gato = Gato('Luffy');
+
+  cachorro.fazerSom();
+  gato.fazerSom();
+
+  cachorro.dormir();
+  gato.dormir();
+
+  print("Cor do Pluto: " + cachorro.corDoPelo);
+}
